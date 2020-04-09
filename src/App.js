@@ -10,7 +10,6 @@ function App() {
       setPizzas(processPizzas(pizzas))
     }
   }, [pizzaState]); //eslint-disable-line react-hooks/exhaustive-deps
-  console.log({ pizzaState });
 
   // 4. Perform the sort from highest to lowest, return the top 20 results
   const sortPizzas = useCallback(sortablePizzas => {
